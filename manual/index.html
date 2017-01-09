@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- MathJax -->
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>
+    Luammd    </title>
+
+    <link rel="icon" type="image/png" href="/images/luammd-logo.png">
+
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        <header>
+          <h1 class="header"><a href="/">Luammd</a></h1>
+          <p class="header">
+          A simple blog framework.            
+          </p>
+          <br>
+          <p class="header">
+            Writen in 
+            <a class="header name" href="https://www.lua.org/">Lua</a>
+          </p>
+          <br>
+          <ul>
+            <li>
+              <a class="buttons github" href="https://github.com/luammd/luammd">View On GitHub</a>
+            </li>
+          </ul>
+          <ul>
+                <li>
+                <span><a title="home page" class="" href="/">home</a></span>
+              </li>
+                <li>
+                <span><a title="manual" class="" href="/manual/">manual</a></span>
+
+              </li>
+              </ul>
+        </header>
+      </div>
+      <div>
+        <article class="content">
+            <section class="post">
+            <h1>Manual</h1>
+  <p>A simple &amp; [flexible <em>TODO</em>] static site generator, writen in Lua. </p>
+
+<h2>Dependencies</h2>
+
+<ol>
+<li><a href="https://www.lua.org/">Lua</a>(Tested Lua5.3)</li>
+<li><a href="https://github.com/keplerproject/luafilesystem">luafilesystem</a></li>
+<li><a href="http://doc.lubyk.org/yaml.html">yaml</a></li>
+<li><a href="http://asbradbury.org/projects/lua-discount/">lua-discount</a></li>
+</ol>
+
+
+<h2>Usage</h2>
+
+<pre><code>git clone git@github.com:luammd/luammd.git
+cd luammd
+</code></pre>
+
+<p>Add markdown files in posts/ directory</p>
+
+<pre><code>2017-01-08-luammd.md
+
+---
+title: Hello Luammd!          must
+issueid: 1                    optional
+categories: Luammd            must
+uri: luammd                   must -&gt; luammd.html
+---
+
+A simple &amp; flexible static site generator, writen in Lua. 
+</code></pre>
+
+<p>Add markdown files in pages/ directory</p>
+
+<pre><code>about.md
+
+---
+title: About                  must
+---
+
+A simple &amp; flexible static site generator, writen in Lua. 
+</code></pre>
+
+<p>Run server</p>
+
+<pre><code>lua luammd.lua
+</code></pre>
+
+<p>All html files in html/ directory</p>
+
+<p>Open browser in http://127.0.0.1:8080</p>
+
+<h2>Links</h2>
+
+<ol>
+<li><a href="https://github.com/gordonbrander/lettersmith">lettersmith</a></li>
+<li><a href="https://github.com/henkboom/luablog">luablog</a></li>
+</ol>
+
+          </section>
+          </article>
+      </div>
+    </div>
+  </body>
+</html>
+  
