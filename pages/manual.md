@@ -1,4 +1,6 @@
-# luammd
+---
+title: Manual
+---
 
 A simple & [flexible *TODO*] static site generator, writen in Lua. 
 
@@ -18,28 +20,24 @@ Add markdown files in posts/ directory
 
     2017-01-08-luammd.md
 
-```yaml
----
-title: Hello Luammd!          must
-issueid: 1                    optional
-categories: Luammd            must
-uri: luammd                   must -> luammd.html
----
+    ---
+    title: Hello Luammd!          must
+    issueid: 1                    optional
+    categories: Luammd            must
+    uri: luammd                   must -> luammd.html
+    ---
 
-A simple & flexible static site generator, writen in Lua. 
-```
+    A simple & flexible static site generator, writen in Lua. 
 
 Add markdown files in pages/ directory
 
     about.md
 
-```yaml
----
-title: About                  must
----
+    ---
+    title: About                  must
+    ---
 
-A simple & flexible static site generator, writen in Lua. 
-```
+    A simple & flexible static site generator, writen in Lua. 
 
 Run server
 
